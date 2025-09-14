@@ -1,6 +1,8 @@
 name: 03-workflow-runners.yaml
-on:
+on: 
     push:
+        branches:
+            - 'release/**'
 jobs:
     ubuntu-echo:
         runs-on: ubuntu-latest

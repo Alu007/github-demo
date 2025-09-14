@@ -1,6 +1,10 @@
 name: 01-building-blocks
 
-on: push 
+on: 
+    push:
+        branches:
+            - 'release/**'
+      
 
 jobs:
     echo-hello:
